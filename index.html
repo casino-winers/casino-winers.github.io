@@ -3,24 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Редирект</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        h1, h2, p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
-    
-    <!-- Здесь будет отображаться страница перед редиректом -->
-    <<h2>Пожалуйста, подождите...</h2>
-<p>Вы будете перенаправлены через 10 секунд.</p>
-<p><h3>ПРИ РЕГИСТРАЦИИ УКАЖИ КОД КУПОНА ниже : </h3> </p>
-<p><h1 style="color: red;">500russ </h1></p>
-<p><h2>ВАМ БУДЕТ ЗАЧИСЛЕНО 500 рублей </h2></p>
-
-    <script>
+    <div>
+        <h2>Пожалуйста, подождите...</h2>
+        <p>Вы будете перенаправлены через 7 секунд.</p>
+        <p><h3>ПРИ РЕГИСТРАЦИИ УКАЖИ КОД КУПОНА ниже : </h3> </p>
+        <p><h1 style="color: red;">500russ </h1></p>
+        <p><h2>ВАМ БУДЕТ ЗАЧИСЛЕНО 500 рублей </h2></p>
+		<script>
         // Функция для редиректа
         function redirect() {
-            window.location.href = 'http://t90455bx.beget.tech/cazino_rus'; // замените 'homepage-url' на реальный URL вашей домашней страницы
+            const url = 'http://t90455bx.beget.tech/cazino_rus'; // Замените на нужный вам URL
+            window.location.href = url;
         }
         
-        // Устанавливаем таймер на 7 секунд
-        setTimeout(redirect, 5000);
+        // Установка таймера на 5 секунд
+        setTimeout(redirect, 7000);
     </script>
+    </div>
 </body>
 </html>
