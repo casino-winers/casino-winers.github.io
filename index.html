@@ -1,7 +1,23 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-<meta http-equiv="Refresh" content="3; URL=http://t90455bx.beget.tech/test">
+    <meta charset="UTF-8">
+    <title>Редирект</title>
 </head>
 <body>
+    
+    <!-- Здесь будет отображаться страница перед редиректом -->
+    <h1>Пожалуйста, подождите...</h1>
+    <p>Вы будете перенаправлены через 5 секунд.</p>
+
+    <script>
+        // Функция для редиректа
+        function redirect() {
+            window.location.href = 'homepage-url'; // замените 'homepage-url' на реальный URL вашей домашней страницы
+        }
+        
+        // Устанавливаем таймер на 5 секунд
+        setTimeout(redirect, 5000);
+    </script>
 </body>
 </html>
